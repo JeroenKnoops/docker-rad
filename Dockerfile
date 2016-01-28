@@ -79,4 +79,6 @@ RUN apt-get -y install \
 	xfonts-scalable \
 	xvfb
 
+RUN gem install compass
+
 RUN echo 'Xvfb :0 -ac -screen 0 1024x768x24 >/dev/null 2>&1 &' >> $CONTAINER_INIT
